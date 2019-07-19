@@ -4,20 +4,41 @@
   }
 }
 @media (max-width: 500px) {
-  .top-header {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .container .top-header nav {
+    width: 175%;
+    right: 25%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .container .top-header {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
   }
-  .top-header a {
-    margin: 0 5%;
-  }
+}
+@media (max-width: 500px) {
   .content-section {
+    display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    border: 1px solid red;
+    width: 100%;
   }
   .content-section .text-content {
-    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90%;
+    border: 1px solid blue;
+    align-items: center;
+    padding: 20px;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -195,6 +216,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   width: 655px;
+  position: relative;
 }
 nav a {
   font-size: 20px;
@@ -218,12 +240,18 @@ nav a {
   flex-direction: column;
   margin: 3% 0;
 }
+.home header .header-width {
+  width: 120%;
+  position: relative;
+  right: 70px;
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 2%;
+}
 .home header .top-header {
   display: flex;
-  margin: 3% 0;
-}
-.home header .img-bus {
-  border-top: 2px dashed #C0C0C0;
+  width: 84%;
+  align-items: center;
+  margin-left: 7%;
 }
 .home header .header-content {
   margin: 3% 0;
@@ -289,4 +317,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .btn:hover {
+  color: #1aff1a;
 }

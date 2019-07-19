@@ -4,15 +4,23 @@
     flex-direction: column;
     margin:3% 0;
 
+
+    .header-width{
+      width:120%;
+      position: relative;
+      right: 70px;
+      border-bottom:2px dashed @navigation-border;
+      padding-bottom:2%;
+    }
+
     .top-header{
       display: flex;
-      margin:3% 0;
+      width:84%;
+      align-items: center;
+      margin-left:7%;
     }
 
-    .img-bus{
-      border-top:2px dashed @navigation-border;
-    }
-
+    
     .header-content{
       margin:3% 0;
       padding-bottom:2%;
@@ -81,5 +89,9 @@
   .btn {
     .custom-button();
     .custom-layout(center, center);
+
+    &:hover {
+      color: lighten(green,30%)
+    }
   }
 }// home

@@ -16,32 +16,59 @@
 // Mobile Style
 @mobile: ~'(max-width: 500px)';
 
-@media @mobile {
-    h1{
+h1{
+    @media @mobile {
         color:skyblue;
     }
 }
 
 //<---------code------------>
+.container{
 
-@media @mobile{
-    .top-header{
+    @media @mobile {
+        width:100%;
+        padding:20px;
+    }
+
+.top-header{
+
+        nav{
+            @media @mobile {
+                width:175%;
+                right:25%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+    @media @mobile {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        border:1px solid red;
+        align-items:center;
 
-        a{
-            margin:0 5%
-        }
     }
+}
 
-    .content-section{
-        flex-direction:column;
-        border:1px solid blue;
-
-        .text-content{
-            border:1px solid red;
-        }
-    }
 
 }
+
+.content-section{
+
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        border:1px solid red;
+        width:100%;
+        .text-content{
+            display:flex;
+            justify-content:space-between;
+            flex-direction:column;
+            width:90%;
+            border:1px solid blue;
+            align-items: center;
+            padding:20px;
+        }
+    }
+}
+
